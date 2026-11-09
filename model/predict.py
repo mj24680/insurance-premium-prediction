@@ -12,7 +12,7 @@ with open('model/model.pkl', 'rb') as f:
 MODEL_VERSION = '1.0.0'
 
 # improvement : for confidence score
-class_labels = model.classes.tolist()
+class_labels = model.classes_.tolist()
 
 def predict_output(user_input: dict):
 
